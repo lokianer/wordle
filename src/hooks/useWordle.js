@@ -86,7 +86,7 @@ const useWordle = (word, wordlist) => {
     const handleKeyUp = ({ key }) => {
         if(key === 'Enter') {
             //only add guess if turn is less than 5
-            if (turn > 5) {
+            if (turn >= 5) {
                 setShowModal(true);
                 return;
             }
