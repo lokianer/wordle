@@ -41,7 +41,7 @@ const useWordle = (word, wordlist) => {
     const addNewGuess = (formattedGuess) => { 
         if(currentGuess === word) {
             setIsCorrect(true);
-            setShowModal(true);
+            setTimeout(() =>  setShowModal(true), 2000);
         }
         setGuesses((prev) => {
             let newGuesses = [...prev];
@@ -87,7 +87,7 @@ const useWordle = (word, wordlist) => {
         if(key === 'Enter') {
             //only add guess if turn is less than 5
             if (turn >= 5) {
-                setShowModal(true);
+                setTimeout(() =>  setShowModal(true), 2000);
                 return;
             }
             // do not add duplicate words
