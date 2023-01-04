@@ -1,5 +1,5 @@
 import useWordle from '../hooks/useWordle'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Grid from './Grid';
 import Keypad from './Keypad';
 import Modal from './Modal';
