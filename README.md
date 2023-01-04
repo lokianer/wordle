@@ -1,1 +1,1 @@
-# wordle
+# A Wordle Game in German
