@@ -3431,7 +3431,6 @@ export const words = [
       "PULPA",
       "EPODE",
       "KADUK",
-      "JOSTY",
       "GERBE",
       "GARBE",
       "FREYR",
