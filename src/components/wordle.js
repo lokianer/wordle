@@ -23,7 +23,6 @@ export default function Wordle({ word, wordlist }) {
 
   return (
     <div>
-        <h2> Gesuchtes Wort: {word}</h2>
         <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
         <Keypad usedKeys={usedKeys}/>
         {showModal && <Modal word={word} isCorrect={isCorrect} turn={turn}/>}
