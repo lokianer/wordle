@@ -1067,7 +1067,6 @@ export const words = [
       "OHEIM",
       "GRANS",
       "RILLE",
-      "SHINN",
       "TOXIN",
       "BAGEL",
       "NUTTE",
