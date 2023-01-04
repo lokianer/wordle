@@ -86,8 +86,7 @@ const useWordle = (word, wordlist) => {
     const handleKeyUp = ({ key }) => {
         if(key === 'Enter') {
             //only add guess if turn is less than 5
-            if (turn >= 5) {
-                setTimeout(() =>  setShowModal(true), 2000);
+            if (turn > 5) {
                 return;
             }
             // do not add duplicate words
@@ -121,6 +120,10 @@ const useWordle = (word, wordlist) => {
             }
         }
     };
+
+    if(guesses[5] && !isCorrect) {
+        setTimeout(() =>  setShowModal(true), 2000);
+    }
 
     return {
         turn,

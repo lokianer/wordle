@@ -18,7 +18,7 @@ export default function Wordle({ word, wordlist }) {
         return () => {
             window.removeEventListener('keyup', handleKeyUp);
         }
-    }, [handleKeyUp, isCorrect, turn, showModal]);
+    }, [handleKeyUp, isCorrect, turn]);
 
 
   return (
